@@ -9,3 +9,7 @@
   <li>Start the app on a dev server with `npm start`</li>
   <li>Run the test suite with `npm test`</li>
 </ul>
+
+### Stretch goals:
+
+<p>Upon reflection, there are a few things I would have liked to change given more time. I did not fully modularize the forms - upon reflection this would have helped with testing, which I did not have time to complete. I was not provided any design assets so I created my own SVGs. And I have not worked in a production environment using TypeScript + Styled Components together so there were some conflicting pieces (see ISCToastProps vs IToastProps) I was not sure what would be considered "best practices" to resolve.</p>
