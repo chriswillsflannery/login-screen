@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { ISCToastProps } from './Toast.types';
-import { colors } from '../../utils/style-utils/vars';
+import { colors, device } from '../../utils/style-utils/vars';
 
 export const SC_TOAST = styled.div<ISCToastProps>`
   width: 400px;
@@ -22,6 +22,9 @@ export const SC_TOAST = styled.div<ISCToastProps>`
     }
   }
   display: ${props => props.showToast ? 'flex' : 'none'};
+  @media ${device.phone} {
+    width: 300px;
+  }
 `;
 
 export const SC_ICON_CONTAINER = styled.div`
@@ -38,4 +41,7 @@ export const SC_TEXT_CONTAINER = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media ${device.phone} {
+    padding: 0 20px;
+  }
 `;
