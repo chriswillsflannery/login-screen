@@ -1,4 +1,4 @@
-import { render, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import ResetForm from './ResetForm';
 import { IResetFormProps } from './ResetForm.types';
 
