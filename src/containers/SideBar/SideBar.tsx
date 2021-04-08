@@ -5,7 +5,7 @@ import SquareCutout from '../../components/SVG/SquareCutout';
 import Logo from '../../components/Logo';
 
 const SideBar = () => (
-  <SC_SIDEBAR className="SideBar">
+  <SC_SIDEBAR className="SideBar" data-testid="SideBar">
     <BorderDecoration
       position="tr"
       size="sm"

@@ -11,8 +11,8 @@ import {
 } from '../../utils/style-utils/vars';
 import Blimp from '../SVG/Blimp';
 
-const SignInForm: React.FC<ISignInFormProps> = ({ setShowResetForm, setShowToast }) => (
-  <SC_SIGN_IN_FORM>
+const SignInForm: React.FC<ISignInFormProps> = ({ setShowResetForm }) => (
+  <SC_SIGN_IN_FORM data-testid="SignInForm">
     <SC_H1 color={colors.defaultText} margin="0 0 30px 0">
       Sign In
     </SC_H1>
@@ -24,7 +24,7 @@ const SignInForm: React.FC<ISignInFormProps> = ({ setShowResetForm, setShowToast
     </SC_FORM>
     <SC_H5>
       Forgot your password?
-      <SC_BUTTON_LINK onClick={() => setShowResetForm(true)}>
+      <SC_BUTTON_LINK onClick={() => setShowResetForm(true)} data-testid="SignInForm--link">
         Reset it here.
       </SC_BUTTON_LINK>
     </SC_H5>

@@ -17,7 +17,7 @@ const ResetForm: React.FC<IResetFormProps> = ({ setShowResetForm, setShowToast }
   const [input, setInput] = useState<string>('');
   const inputEl = useRef<HTMLInputElement>(null);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validateFormInput(input)) {
       setShowResetForm(false);
@@ -31,7 +31,7 @@ const ResetForm: React.FC<IResetFormProps> = ({ setShowResetForm, setShowToast }
   }
 
   return (
-    <SC_RESET_FORM>
+    <SC_RESET_FORM data-testid="ResetForm">
       <SC_H1 color={colors.defaultText} margin="0 0 30px 0">
         Reset Password
       </SC_H1>
@@ -43,8 +43,9 @@ const ResetForm: React.FC<IResetFormProps> = ({ setShowResetForm, setShowToast }
           value={input}
           placeholder="Email"
           onChange={(e) => setInput(e.target.value)}
+          data-testid="ResetForm--input"
         />
-        <SC_FORM_SUBMIT type="submit" value="Reset Password"/>
+        <SC_FORM_SUBMIT type="submit" value="Reset Password" data-testid="ResetForm--submit"/>
       </SC_FORM>
       <SC_H5>
         Didn't mean to click that?

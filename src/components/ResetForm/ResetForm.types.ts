@@ -1,4 +1,6 @@
+import React from "react";
+
 export interface IResetFormProps {
-  setShowResetForm: (arg: boolean) => void;
-  setShowToast: (arg: boolean) => void;
+  setShowResetForm: React.Dispatch<React.SetStateAction<boolean>>;
+  setShowToast: React.Dispatch<React.SetStateAction<boolean>>;
 }

@@ -1,4 +1,3 @@
 export interface ISignInFormProps {
-  setShowResetForm: (arg: boolean) => void;
-  setShowToast: (arg: boolean) => void;
+  setShowResetForm: React.Dispatch<React.SetStateAction<boolean>>;
 }

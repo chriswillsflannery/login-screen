@@ -5,7 +5,7 @@ import ThumbsUp from '../SVG/ThumbsUp';
 import { SC_SMALL } from '../../utils/style-utils/vars';
 
 const Toast: React.FC<IToastProps> = ({ showToast, setShowToast }) => (
-  <SC_TOAST showToast={showToast} onClick={() => setShowToast(false)}>
+  <SC_TOAST showToast={showToast} onClick={() => setShowToast(false)} data-testid="Toast">
     <SC_ICON_CONTAINER>
       <ThumbsUp width="20px" />
     </SC_ICON_CONTAINER>

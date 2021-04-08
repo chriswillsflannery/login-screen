@@ -10,7 +10,7 @@ const MainContent = () => {
   const [showToast, setShowToast] = useState(false);
 
   return (
-    <SC_MAIN_CONTENT>
+    <SC_MAIN_CONTENT data-testid="MainContent">
       <Toast showToast={showToast} setShowToast={setShowToast} />
       {
         showResetForm
@@ -22,7 +22,6 @@ const MainContent = () => {
         ) : (
           <SignInForm
             setShowResetForm={setShowResetForm}
-            setShowToast={setShowToast}
           />
         )
       }

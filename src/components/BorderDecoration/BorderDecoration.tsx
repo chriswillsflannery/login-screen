@@ -10,6 +10,7 @@ const BorderDecoration: React.FC<IBorderDecorationProps> = ({ position, size, ch
     className="BorderDecoration"
     position={position}
     size={size}
+    data-testid="BorderDecoration"
   >
     { children }
   </SC_BORDERDECORATION>

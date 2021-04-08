@@ -81,6 +81,9 @@ export const SC_FORM_INPUT = styled.input<IFormInputProps>`
   border-radius: 5px;
   margin: 0 0 20px 0;
   padding: 0 10px;
+  :focus {
+    outline: 1px solid ${colors.primary};
+  }
 `;
 
 export const SC_FORM_SUBMIT = styled.input`
